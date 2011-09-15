@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using USkin;
 
 namespace Drakenbot
 {
@@ -13,6 +14,10 @@ namespace Drakenbot
         [STAThread]
         static void Main()
         {
+
+            USkinClass.USkinInit("", "", "" + "//" + "Skins/default.msstyles");
+            USkinClass.USkinLoadSkin("Skins/default.msstyles");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmMain());
