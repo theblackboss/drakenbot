@@ -42,6 +42,10 @@
             this.customTitleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.uxBasicFunctions = new System.Windows.Forms.Button();
+            this.uxTrainer = new System.Windows.Forms.Button();
+            this.uxAutomatics = new System.Windows.Forms.Button();
+            this.uxAlerts = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +58,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(301, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(450, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -146,11 +150,55 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
+            // uxBasicFunctions
+            // 
+            this.uxBasicFunctions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uxBasicFunctions.Location = new System.Drawing.Point(2, 27);
+            this.uxBasicFunctions.Name = "uxBasicFunctions";
+            this.uxBasicFunctions.Size = new System.Drawing.Size(110, 20);
+            this.uxBasicFunctions.TabIndex = 1;
+            this.uxBasicFunctions.Text = "Basic Functions";
+            this.uxBasicFunctions.UseVisualStyleBackColor = true;
+            // 
+            // uxTrainer
+            // 
+            this.uxTrainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uxTrainer.Location = new System.Drawing.Point(114, 27);
+            this.uxTrainer.Name = "uxTrainer";
+            this.uxTrainer.Size = new System.Drawing.Size(110, 20);
+            this.uxTrainer.TabIndex = 2;
+            this.uxTrainer.Text = "Trainer";
+            this.uxTrainer.UseVisualStyleBackColor = true;
+            // 
+            // uxAutomatics
+            // 
+            this.uxAutomatics.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uxAutomatics.Location = new System.Drawing.Point(226, 27);
+            this.uxAutomatics.Name = "uxAutomatics";
+            this.uxAutomatics.Size = new System.Drawing.Size(110, 20);
+            this.uxAutomatics.TabIndex = 3;
+            this.uxAutomatics.Text = "Automatics";
+            this.uxAutomatics.UseVisualStyleBackColor = true;
+            // 
+            // uxAlerts
+            // 
+            this.uxAlerts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.uxAlerts.Location = new System.Drawing.Point(338, 27);
+            this.uxAlerts.Name = "uxAlerts";
+            this.uxAlerts.Size = new System.Drawing.Size(110, 20);
+            this.uxAlerts.TabIndex = 4;
+            this.uxAlerts.Text = "Alerts";
+            this.uxAlerts.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 104);
+            this.ClientSize = new System.Drawing.Size(450, 50);
+            this.Controls.Add(this.uxAlerts);
+            this.Controls.Add(this.uxAutomatics);
+            this.Controls.Add(this.uxTrainer);
+            this.Controls.Add(this.uxBasicFunctions);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
@@ -182,6 +230,10 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customTitleToolStripMenuItem;
+        private System.Windows.Forms.Button uxBasicFunctions;
+        private System.Windows.Forms.Button uxTrainer;
+        private System.Windows.Forms.Button uxAutomatics;
+        private System.Windows.Forms.Button uxAlerts;
     }
 }
 
