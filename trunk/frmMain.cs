@@ -20,6 +20,8 @@ namespace Drakenbot
         public Client Client;
         public Player Player;
 
+        Forms.frmMapView frmMapView = new Forms.frmMapView();
+
         public frmMain()
         {
             InitializeComponent();
@@ -38,6 +40,19 @@ namespace Drakenbot
             {
                 Player = Client.GetPlayer();
             }
+        }
+
+        private void uxCustomTitle_Click(object sender, EventArgs e)
+        {
+            if (uxCustomTitle.Checked == true)
+                Client.Window.Title = "Tibia - Draken Bot [" + (Player.Name).ToString() + "]";
+            else
+                Client.Window.Title = "Tibia";
+        }
+
+        private void uxMapView_Click(object sender, EventArgs e)
+        {
+            frmMapView.ShowDialog();
         }
     }
 }

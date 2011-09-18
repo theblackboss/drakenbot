@@ -29,19 +29,20 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.skinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.minimizToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.trayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clientToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customTitleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.uxMainMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxMenuMinimize = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxMenuTray = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.uxMenuLoad = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxMenuSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.uxMenuExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxMenuClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxCustomTitle = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxMapView = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxSkin = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.uxAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.uxBasicFunctions = new System.Windows.Forms.Button();
             this.uxTrainer = new System.Windows.Forms.Button();
             this.uxAutomatics = new System.Windows.Forms.Button();
@@ -52,110 +53,120 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mainToolStripMenuItem,
-            this.clientToolStripMenuItem,
-            this.skinToolStripMenuItem,
-            this.helpToolStripMenuItem});
+            this.uxMainMenu,
+            this.uxMenuClient,
+            this.uxSkin,
+            this.uxHelp});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(450, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(410, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // mainToolStripMenuItem
+            // uxMainMenu
             // 
-            this.mainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.minimizToolStripMenuItem,
-            this.trayToolStripMenuItem,
+            this.uxMainMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uxMenuMinimize,
+            this.uxMenuTray,
             this.toolStripSeparator2,
-            this.loadToolStripMenuItem,
-            this.saveToolStripMenuItem,
+            this.uxMenuLoad,
+            this.uxMenuSave,
             this.toolStripSeparator1,
-            this.exitToolStripMenuItem});
-            this.mainToolStripMenuItem.Name = "mainToolStripMenuItem";
-            this.mainToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.mainToolStripMenuItem.Text = "Main";
+            this.uxMenuExit});
+            this.uxMainMenu.Name = "uxMainMenu";
+            this.uxMainMenu.Size = new System.Drawing.Size(45, 20);
+            this.uxMainMenu.Text = "Main";
             // 
-            // skinToolStripMenuItem
+            // uxMenuMinimize
             // 
-            this.skinToolStripMenuItem.Name = "skinToolStripMenuItem";
-            this.skinToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.skinToolStripMenuItem.Text = "Skin";
+            this.uxMenuMinimize.Name = "uxMenuMinimize";
+            this.uxMenuMinimize.Size = new System.Drawing.Size(127, 22);
+            this.uxMenuMinimize.Text = "Minimize";
             // 
-            // helpToolStripMenuItem
+            // uxMenuTray
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // minimizToolStripMenuItem
-            // 
-            this.minimizToolStripMenuItem.Name = "minimizToolStripMenuItem";
-            this.minimizToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.minimizToolStripMenuItem.Text = "Minimiz";
-            // 
-            // trayToolStripMenuItem
-            // 
-            this.trayToolStripMenuItem.Name = "trayToolStripMenuItem";
-            this.trayToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.trayToolStripMenuItem.Text = "Tray";
-            // 
-            // loadToolStripMenuItem
-            // 
-            this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.loadToolStripMenuItem.Text = "Load";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            // 
-            // clientToolStripMenuItem
-            // 
-            this.clientToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customTitleToolStripMenuItem});
-            this.clientToolStripMenuItem.Name = "clientToolStripMenuItem";
-            this.clientToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.clientToolStripMenuItem.Text = "Client";
-            // 
-            // customTitleToolStripMenuItem
-            // 
-            this.customTitleToolStripMenuItem.Name = "customTitleToolStripMenuItem";
-            this.customTitleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.customTitleToolStripMenuItem.Text = "Custom Title";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.uxMenuTray.Name = "uxMenuTray";
+            this.uxMenuTray.Size = new System.Drawing.Size(127, 22);
+            this.uxMenuTray.Text = "Tray";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(124, 6);
+            // 
+            // uxMenuLoad
+            // 
+            this.uxMenuLoad.Name = "uxMenuLoad";
+            this.uxMenuLoad.Size = new System.Drawing.Size(127, 22);
+            this.uxMenuLoad.Text = "Load";
+            // 
+            // uxMenuSave
+            // 
+            this.uxMenuSave.Name = "uxMenuSave";
+            this.uxMenuSave.Size = new System.Drawing.Size(127, 22);
+            this.uxMenuSave.Text = "Save";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(124, 6);
+            // 
+            // uxMenuExit
+            // 
+            this.uxMenuExit.Name = "uxMenuExit";
+            this.uxMenuExit.Size = new System.Drawing.Size(127, 22);
+            this.uxMenuExit.Text = "Exit";
+            // 
+            // uxMenuClient
+            // 
+            this.uxMenuClient.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uxCustomTitle,
+            this.uxMapView});
+            this.uxMenuClient.Name = "uxMenuClient";
+            this.uxMenuClient.Size = new System.Drawing.Size(49, 20);
+            this.uxMenuClient.Text = "Client";
+            // 
+            // uxCustomTitle
+            // 
+            this.uxCustomTitle.CheckOnClick = true;
+            this.uxCustomTitle.Name = "uxCustomTitle";
+            this.uxCustomTitle.Size = new System.Drawing.Size(152, 22);
+            this.uxCustomTitle.Text = "Custom Title";
+            this.uxCustomTitle.Click += new System.EventHandler(this.uxCustomTitle_Click);
+            // 
+            // uxMapView
+            // 
+            this.uxMapView.Name = "uxMapView";
+            this.uxMapView.Size = new System.Drawing.Size(152, 22);
+            this.uxMapView.Text = "Map View";
+            this.uxMapView.Click += new System.EventHandler(this.uxMapView_Click);
+            // 
+            // uxSkin
+            // 
+            this.uxSkin.Name = "uxSkin";
+            this.uxSkin.Size = new System.Drawing.Size(41, 20);
+            this.uxSkin.Text = "Skin";
+            // 
+            // uxHelp
+            // 
+            this.uxHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uxAbout});
+            this.uxHelp.Name = "uxHelp";
+            this.uxHelp.Size = new System.Drawing.Size(43, 20);
+            this.uxHelp.Text = "Help";
+            // 
+            // uxAbout
+            // 
+            this.uxAbout.Name = "uxAbout";
+            this.uxAbout.Size = new System.Drawing.Size(113, 22);
+            this.uxAbout.Text = "About";
             // 
             // uxBasicFunctions
             // 
             this.uxBasicFunctions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.uxBasicFunctions.Location = new System.Drawing.Point(2, 27);
             this.uxBasicFunctions.Name = "uxBasicFunctions";
-            this.uxBasicFunctions.Size = new System.Drawing.Size(110, 20);
+            this.uxBasicFunctions.Size = new System.Drawing.Size(100, 20);
             this.uxBasicFunctions.TabIndex = 1;
             this.uxBasicFunctions.Text = "Basic Functions";
             this.uxBasicFunctions.UseVisualStyleBackColor = true;
@@ -163,9 +174,9 @@
             // uxTrainer
             // 
             this.uxTrainer.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.uxTrainer.Location = new System.Drawing.Point(114, 27);
+            this.uxTrainer.Location = new System.Drawing.Point(104, 27);
             this.uxTrainer.Name = "uxTrainer";
-            this.uxTrainer.Size = new System.Drawing.Size(110, 20);
+            this.uxTrainer.Size = new System.Drawing.Size(100, 20);
             this.uxTrainer.TabIndex = 2;
             this.uxTrainer.Text = "Trainer";
             this.uxTrainer.UseVisualStyleBackColor = true;
@@ -173,9 +184,9 @@
             // uxAutomatics
             // 
             this.uxAutomatics.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.uxAutomatics.Location = new System.Drawing.Point(226, 27);
+            this.uxAutomatics.Location = new System.Drawing.Point(206, 27);
             this.uxAutomatics.Name = "uxAutomatics";
-            this.uxAutomatics.Size = new System.Drawing.Size(110, 20);
+            this.uxAutomatics.Size = new System.Drawing.Size(100, 20);
             this.uxAutomatics.TabIndex = 3;
             this.uxAutomatics.Text = "Automatics";
             this.uxAutomatics.UseVisualStyleBackColor = true;
@@ -183,9 +194,9 @@
             // uxAlerts
             // 
             this.uxAlerts.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.uxAlerts.Location = new System.Drawing.Point(338, 27);
+            this.uxAlerts.Location = new System.Drawing.Point(308, 27);
             this.uxAlerts.Name = "uxAlerts";
-            this.uxAlerts.Size = new System.Drawing.Size(110, 20);
+            this.uxAlerts.Size = new System.Drawing.Size(100, 20);
             this.uxAlerts.TabIndex = 4;
             this.uxAlerts.Text = "Alerts";
             this.uxAlerts.UseVisualStyleBackColor = true;
@@ -194,7 +205,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 50);
+            this.ClientSize = new System.Drawing.Size(410, 50);
             this.Controls.Add(this.uxAlerts);
             this.Controls.Add(this.uxAutomatics);
             this.Controls.Add(this.uxTrainer);
@@ -217,23 +228,24 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem mainToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem skinToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem minimizToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem trayToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uxMainMenu;
+        private System.Windows.Forms.ToolStripMenuItem uxSkin;
+        private System.Windows.Forms.ToolStripMenuItem uxHelp;
+        private System.Windows.Forms.ToolStripMenuItem uxAbout;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuMinimize;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuTray;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuLoad;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuSave;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem clientToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customTitleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuExit;
+        private System.Windows.Forms.ToolStripMenuItem uxMenuClient;
+        private System.Windows.Forms.ToolStripMenuItem uxCustomTitle;
         private System.Windows.Forms.Button uxBasicFunctions;
         private System.Windows.Forms.Button uxTrainer;
         private System.Windows.Forms.Button uxAutomatics;
         private System.Windows.Forms.Button uxAlerts;
+        private System.Windows.Forms.ToolStripMenuItem uxMapView;
     }
 }
 
